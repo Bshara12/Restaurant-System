@@ -1,0 +1,100 @@
+
+.containercenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #444;
+  padding: 50px;
+}
+
+
+
+
+
+.addfood-container {
+  width: 500px;
+  max-width: 700px;
+  background: #1a1a1a; 
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.addfood-title {
+  text-align: center;
+  color: #ffc227;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.addfood-form {
+  display: grid;
+  gap: 20px;
+}
+
+.form-input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  background: #2d2d2d; /* رمادي غامق */
+  color: #fff;
+  font-size: 14px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ff9800; /* برتقالي */
+  box-shadow: 0 0 8px #ff9800;
+}
+
+.drag-drop {
+  border: 2px dashed #ffc227; /* ذهبي */
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #2d2d2d;
+}
+
+.drag-drop.active {
+  background: #383838;
+  border-color: #ff9800;
+}
+
+.drag-text span {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.image-preview {
+  max-width: 150px;
+  border-radius: 8px;
+  margin: auto;
+  display: block;
+}
+
+.submit-btn {
+  background-color: #ff9800;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #e68900;
+}
+
+
+
+input[type="time"]::-webkit-datetime-edit-ampm-field {
+  display: none;
+}

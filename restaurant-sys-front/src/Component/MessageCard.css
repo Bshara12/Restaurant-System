@@ -1,0 +1,63 @@
+.MessageCard {
+  max-width: 40%;
+  background: #5a5858;
+  padding: 2px 2px 2px 14px;
+  border-radius: 30px 30px 30px 0;
+  color: #fbe309;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.MessageCard h3{
+  color: rgb(255, 184, 3);
+}
+
+
+
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.MessageDeletebutton {
+  width: 11%;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(41, 41, 41);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  gap: 2px;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.MessageDeletebutton:hover {
+  transition-duration: 0.3s;
+  background-color: rgb(255, 69, 69);
+  align-items: center;
+  gap: 0;
+}
+
+.bin-top {
+  transform-origin: bottom right;
+}
+.MessageDeletebutton:hover .bin-top {
+  transition-duration: 0.5s;
+  transform: rotate(160deg);
+}

@@ -1,0 +1,67 @@
+
+
+.manager-details-container {
+  background-color: #403f3f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  color: white;
+}
+
+.manager-details-container h2 {
+  color: gold;
+  text-align: center;
+}
+
+
+
+.manager-info {
+  background-color: #8e8d8d;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.manager-info p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: black;
+}
+
+h3 {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.restaurant-list {
+  list-style: none;
+  padding: 0;
+}
+
+.restaurant-item {
+  background-color: #8e8d8d;
+  border-left: 5px solid rgb(126, 108, 7);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.restaurant-item:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 6px 1px gold;
+  
+}
+
+.restaurant-item strong {
+  color: rgb(132, 114, 10);
+}
+
+
+.manager-info strong{
+  color: rgb(17, 17, 137);
+}

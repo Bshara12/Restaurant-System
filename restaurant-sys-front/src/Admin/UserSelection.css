@@ -1,0 +1,33 @@
+.user-selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(41, 41, 41);
+  min-height: 100vh;
+}
+
+h2 {
+  color: gold;
+  margin: 10px 0 28px;
+  letter-spacing: .3px;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  width: 100%;
+  max-width: 1200px;
+  align-items: stretch;
+  justify-items: center;
+  padding: 0 12px 32px;
+}
+
+/* Responsive tune-ups */
+@media (min-width: 640px) {
+  .user-list { gap: 24px; }
+}
+@media (min-width: 1024px) {
+  .user-list { gap: 28px; }
+}

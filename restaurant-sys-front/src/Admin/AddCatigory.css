@@ -1,0 +1,56 @@
+.my_container h2 {
+  color: #d4af37; /* عنوان ذهبي */
+  text-align: center;
+}
+
+.my_container form input {
+  border: 1px solid #d4af37;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: gold;
+  background: gray;
+}
+.my_container form input::placeholder{
+  color: goldenrod;
+}
+
+.my_container form input:focus {
+  outline: none;
+  border-color: #b08d2f;
+  box-shadow: 0 0 16px 0 #c49a11aa;
+}
+
+.my_container form button {
+  background-color: #d4af37;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px 0;
+}
+
+.my_container form button:hover {
+  background-color: #b08d2f;
+}
+
+.mycard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 350px;
+  border:1px solid gold ;
+  box-shadow:inset 0 0 16px 0px gold;
+  border-radius: 10px;
+}
+.mycard form {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}

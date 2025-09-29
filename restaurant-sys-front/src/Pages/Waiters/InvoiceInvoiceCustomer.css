@@ -1,0 +1,233 @@
+.invc-root {
+  direction: rtl;
+}
+
+.invc-toolbar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.invc-btn {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.invc-btn-gold {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  color: #141414;
+}
+
+.invc-btn-gold:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+.invc-btn-ghost {
+  background: transparent;
+  color: #e5e5e5;
+  border: 1px solid #444;
+}
+
+.invc-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.invc-card {
+  background: #1b1b1b;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .18);
+}
+
+.invc-table-card {
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.invc-table-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(253, 160, 133, .28);
+}
+
+.invc-table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.invc-table-number {
+  font-weight: 800;
+  color: #f7d774;
+}
+
+.invc-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid rgba(255, 255, 255, .15);
+}
+
+.invc-badge-occupied {
+  background: #b8860b;
+  color: #111;
+}
+
+.invc-wrapper {
+  margin-top: 18px;
+}
+
+.invc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.invc-title {
+  margin: 0;
+}
+
+.invc-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.invc-btn-print {
+  background: linear-gradient(135deg, #ffb347, #ffcc33);
+  color: #101010;
+}
+
+.invc-btn-print:hover {
+  filter: brightness(.95);
+}
+
+.invc-paper {
+  background: #121212;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid #2a2a2a;
+}
+
+.invc-paper-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.invc-brand {
+  font-weight: 900;
+  font-size: 22px;
+  background: linear-gradient(90deg, #f7d774, #ffcc33, #fda085);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.invc-meta {
+  color: #c2c2c2;
+  font-size: 14px;
+}
+
+.invc-section-title {
+  font-weight: 800;
+  margin: 12px 0 8px;
+  color: #ffcc33;
+}
+
+.invc-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.invc-table thead th {
+  background: #202020;
+  color: #f2f2f2;
+}
+
+.invc-table th,
+.invc-table td {
+  border-bottom: 1px solid #2a2a2a;
+  padding: 10px;
+  text-align: start;
+  color: #FFEB3B;
+}
+
+.invc-order-block {
+  margin-bottom: 12px;
+}
+
+.invc-totals {
+  text-align: end;
+  font-weight: 800;
+  margin-top: 10px;
+  color: #f6d365;
+}
+
+.invc-grand {
+  text-align: end;
+  background: #0f0f0f;
+}
+
+.invc-grand-value {
+  font-weight: 900;
+  font-size: 20px;
+  color: #ffb347;
+}
+
+/* Modal */
+.invc-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.invc-modal-box {
+  width: min(900px, 92vw);
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
+}
+
+.invc-modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.invc-modal-body {
+  max-height: 70vh;
+  overflow: auto;
+}
+
+@media print {
+
+  .invc-toolbar,
+  .invc-header .invc-actions {
+    display: none !important;
+  }
+
+  .invc-paper {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+}

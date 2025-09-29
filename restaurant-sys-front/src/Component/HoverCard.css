@@ -1,0 +1,75 @@
+/* From Uiverse.io by satyamchaudharydev */ 
+.hovercard {
+  --bg: rgb(164, 142, 15);
+  --hover-bg: gold;
+  --hover-text: black;
+  width: 160px;
+  height: 90px;
+  text-align: center;
+  background: var(--bg);
+  padding: 1.5em;
+  padding-block: 1.8em;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition:
+    0.3s cubic-bezier(0.6, 0.4, 0, 1),
+    transform 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  color: black;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.hovercard:hover{
+  transform: scale(1.1);
+}
+
+.card__body {
+  color: #464853;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+.hovercard > :not(span) {
+  transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+}
+
+.hovercard > strong {
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: -0.035em;
+}
+
+.hovercard span {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--hover-text);
+  border-radius: 5px;
+  font-weight: bold;
+  top: 100%;
+  transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+}
+
+.hovercard:hover span {
+  top: 0;
+  font-size: 1.2em;
+}
+
+.hovercard:hover {
+  background: var(--hover-bg);
+}
+
+.hovercard:hover > div,
+.hovercard:hover > strong {
+  opacity: 0;
+}
